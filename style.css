@@ -41,6 +41,10 @@ header {
     position: sticky;
     top: 0;
     z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
 }
 
 header .container {
@@ -49,6 +53,11 @@ header .container {
     align-items: center;
 }
 
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 nav ul {
     display: flex;
     gap: 30px;
@@ -346,5 +355,16 @@ footer {
 
     .fv p {
         font-size: 14px;
+    }
+
+    .site-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .site-header nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
     }
 }
