@@ -37,7 +37,7 @@
         </div>
     </header>
 
-    <section class="about">
+    <section class="about fade">
         <div class="container about-wrap">
 
           <div class="about-text">
@@ -56,7 +56,7 @@
         </div>
     </section>
 
-    <section id="menu">
+    <section id="menu fade">
         <div class="container">
 
         <h2>Menu</h2>
@@ -84,7 +84,7 @@
 
     </section>
 
-    <section id="style">
+    <section id="style" class="style fade">
 
         <div class="container">
 
@@ -114,7 +114,7 @@
 
     </section>
 
-    <section id="access">
+    <section id="access" class="access fade">
 
         <div class="container">
 
@@ -135,7 +135,7 @@
 
     </section>
 
-    <section id="contact">
+    <section id="contact" class="contact fade">
 
         <div class="container">
 
@@ -155,6 +155,17 @@
         </div>
 
     </footer>
+
+    <script>
+    const fades = document.querySelectorAll('.fade');
+
+    window.addEventListener('scroll', () => {fades.forEach(el => {const rect = el.getBoundingClientRect().top;const windowHeight = window.innerHeight;
+    
+    if (rect < windowHeight - 100) {el.classList.add('show');
+       }
+     });
+    });
+    </script>
 
 </body>
 

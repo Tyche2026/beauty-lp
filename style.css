@@ -323,6 +323,18 @@ footer {
     color: #999;
 }
 
+/* fade */
+.fade {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.8s;
+}
+
+.fade.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 @media (max-width: 768px) {
 
     /* About 縦並び */
